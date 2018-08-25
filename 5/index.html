@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-htmlcss.github.io/424991-sedona/5/">
+</head>
+
+
+  <body>
+    <header class="page-header">
+      <nav class="main-navigation">
+      <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="./catalog.html">Гостиницы</a></li>
+      </ul>
+      </nav>
+    <div class="page-header-logo">
+      <a><img src="img/logo.svg" width="138" height="71" alt="Логотип City of Sedona"></a>
+    </div>
+    </header>
+
+
+    <main class="container">
+      <div class="background-image">
+        <img src="img/welcome.png" width="458" height="352" alt="Welcome to the gorgeous Sedona">
+        </div>
+      <section class="features">
+        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      </section>
+
+      <h2 class="visually-hidden">5 Преимуществ</h2>
+
+      <section class="features-blue-one">
+        <div class="content">
+          <h2>Настоящий городок</h2>
+            <span>- №1 -</span>
+            <p>Седона - не аттракцион для туристов,
+            там течет своя жизнь</p>
+        </div>
+        <div class="features-one-picture">
+          <img src="img/image1.jpg" width="800" height="300" alt="Каньон">
+        </div>
+      </section>
+
+
+      <section class="features-white">
+        <div class="content">
+          <h2>Жилье</h2>
+            <p>Рекомендуем пожить в настоящем мотеле,
+            все как в кино!</p>
+        </div>
+
+        <div class="content">
+          <h2>Еда</h2>
+            <p>Всегда заказывайте фирменный бургер,
+            вы не разочаруетесь!</p>
+        </div>
+
+        <div class="content">
+          <h2>Сувениры</h2>
+            <p>Не только китайского,
+            но и местного производства!</p>
+        </div>
+      </section>
+
+      <section class="features-blue-two">
+        <div class="content">
+          <h2>Там есть Мост Дьявола</h2>
+            <span>- №2 -</span>
+            <p>Да, по нему можно пройти,
+            если конечно вы осмелитесь</p>
+        </div>
+        <div class="features-two-picture">
+          <img src="img/image2.jpg" width="800" height="300" alt="Каньон">
+        </div>
+      </section>
+    
+
+      <section class="features-grey">
+        <div class="content">
+          <h2>Небольшая площадь</h2>
+          <span>- №3 -</span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+
+        <div class="content">
+          <h2>Красивая дорога</h2>
+          <span>- №4 -</span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+
+        <div class="content">
+          <h2>Мало туристов</h2>
+          <span>- №5 -</span>
+          <p>Большинство едет в Гранд каньон и толпится там</p>
+        </div>
+      </section>
+
+      <section class="question">
+        <div class="question-container">
+          <h3>Заинтересовались?</h3>
+            <p>Укажите предполагаемые даты поездки,
+            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button type="button">Поиск гостиницы в Седоне</button>
+        </div>
+      </section>
+
+      <section class="map"></section>
+
+        <!--Форма поиска гостиниц начало-->
+      <div class="search-sedona">
+
+          <form action="https://echo.htmlacademy.ru" method="get">
+
+              <div class="input_data">
+                  <label for="check-in">Дата заезда</label>
+                  <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2016">
+              </div>
+              <div class="calendar-icon"></div>
+
+              <div class="input_data">
+                  <label for="check-out">Дата выезда</label>
+                  <input type="text" name="check-out" id="check-out" placeholder="4 июля 2016">
+              </div>
+            <!--<div class="calendar-icon"></div>--> 
+
+              <div class="half-width">
+                  <label for="adults">Взрослые</label>
+                  <div class="container-minus-plus">
+                      <button class="btn-minus" type="button">-</button>
+                      <input type="text" name="adults" value="2" id="adults">
+                      <button class="btn-plus" type="button">+</button>
+                  </div>
+              </div>
+
+
+              <div class="half-width-two">
+                  <label for="adults">Дети</label>
+                  <div class="container-minus-plus">
+                      <button class="btn-minus" type="button">-</button>
+                      <input type="text" name="kids" value="0" id="kids">
+                      <button class="btn-plus" type="button">+</button>
+                  </div>
+              </div>
+
+              <button type="submit">"Найти"</button>
+          </form>
+      </div>
+      <!--Форма поиска конец-->
+  </main>
+
+
+    <footer class="main-footer">
+      <div class="insta">
+        <a href="#">#visitsedona</a>
+      </div>
+      <div class="social">
+        <ul>
+          <li><a class="social-button" href="https://twitter.com" aria-label="Twitter"></a></li>
+          <li><a class="social-button" href="https://facebook.com" aria-label="Facebook"></a></li>
+          <li><a class="social-button" href="https://youtube.com" aria-label="YouTube"></a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+      <span>Website by</span>
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
+      </p>
+    </footer>
+      <!-- тут будет карта <section class="map"></section>-->
+  </body>
+</html>
